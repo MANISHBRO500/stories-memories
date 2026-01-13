@@ -1,4 +1,4 @@
-const API = "https://your-backend.onrender.com";
+const API = "https://stories-memories.onrender.com";
 const ADMIN_PASSWORD = "2026";
 
 function login() {
@@ -41,3 +41,4 @@ function deleteStory(id) {
   fetch(`${API}/delete/${id}`, { method: "DELETE" })
     .then(() => loadStories());
 }
+
